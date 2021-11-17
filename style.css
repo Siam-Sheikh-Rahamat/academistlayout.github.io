@@ -1,0 +1,649 @@
+/*===== Defult css ===*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+.container-full{
+	width: 100%;
+
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+}
+.container::before,
+.container::after,
+.container-full::before,
+.container-full::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.col-100{
+	width: 100%;
+	float: left;
+	padding: 0 15px;
+
+}
+.col-70{
+	width: 70%;
+	float: left;
+	padding: 0 15px;
+
+}
+
+.col-50{
+	width: 50%;
+	float: left;
+	padding: 0 15px;
+}
+.col-33{
+	width: 33.33%;
+	float: left;
+	padding: 0 15px;
+}
+.col-30{
+	width: 30%;
+	float: left;
+	padding: 0 15px;
+
+}
+.col-25{
+	width: 25%;
+	float: left;
+	padding: 0 15px;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+img{
+	height: 100%;
+	width: 100%;
+}
+.section-padding{
+	padding: 120px 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+/*
+font-family: 'Heebo', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/	
+
+/*===== Defult css ===*/
+
+
+/*======site css start =====*/
+
+/* 01 top header  */
+.top-header{
+	background-color: #1D1D1D;
+	padding: 14px 0;
+}
+.number{
+	text-decoration: none;
+	color: #B6B6B6;
+	font-size: 14px;
+	letter-spacing: 0.2px;
+	transition: 0.5s;
+}
+.social-icon {
+	list-style: none;
+	display: inline-block;
+	color: #b6b6b6;
+	margin-left: 30px;
+}
+.social-icon li{
+	display: inline-block;
+	font-size: 14px;
+	margin: 0 5px;
+}
+.social-icon  a{
+	color: #b6b6b6;
+	transition: 0.5s;
+}
+.login-regester{
+	color: #b6b6b6;
+	font-size: 14px;
+	letter-spacing: 0.2;
+	text-transform: capitalize;
+	float: right;
+}
+.login-regester a{
+	color: #b6b6b6;
+	margin-left: 20px;
+	transition: 0.5s;
+}
+.login-regester i{
+	margin-right:10px;
+}
+.number:hover,
+.social-icon a:hover,
+.login-regester a:hover{
+	color: #DB1B2F;
+}
+
+
+/*    02   header start    */
+.header{
+	background-color: #ffffff;
+	padding: 30px 0;
+}
+.logo img{
+	width: 180px;
+}
+.main-manu{
+	list-style: none;
+	float: right;
+	padding-top: 10px;
+}
+.main-manu li{
+	display: inline-block;
+}
+.main-manu li a{
+	color: #252525;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-left: 20px;
+	border-bottom: 2px solid transparent;
+	transition: 0.5s;
+}
+.main-manu li a:hover{
+	border-bottom: 2px solid #FF1949;
+}
+.activ{
+	border-bottom: 2px solid #FF1949 !important;
+}
+.main-manu .manu-icon{
+	margin-left: 10px !important;
+	border-bottom: 2px solid transparent !important;
+	transition: 0.5s;
+}
+.main-manu .manu-icon:hover{
+	color: #FF1949;
+}
+
+
+/*    03  home section    */
+
+.home{
+	background-image: url('img/home-img/home.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding: 100px 0;
+	color: #ffffff;
+	font-family: 'Poppins', sans-serif;
+}
+.home-contant h1{
+	font-size: 92px;
+	font-weight: 700;
+	position: relative;
+
+}
+.home-contant h1::before{
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 60px;
+	background: #ffffff;
+	bottom: 0;
+	left: 0;
+}
+.home-contant p{
+	font-size: 19px;
+	font-weight: 300;
+	line-height: 30px;
+	padding: 20px 0;
+}
+.btn{
+	font-size: 17px;
+	font-weight: 600;
+	color: #ffffff;
+	border: 2px solid #ffffff;
+	padding: 20px 30px;
+	display: inline-block;
+	transition: 0.3s;
+
+}
+.btn i{
+	visibility: hidden;
+	transition: 0.3s;
+}
+.btn:hover i{
+	visibility: visible;
+}
+.activ-btn{
+	background-color: #FF1949;
+	border: 2px solid #FF1949;
+	margin-left: 15px;
+
+}
+
+
+/*    04  course   */
+.courses-manu{
+	list-style: none;
+	padding-bottom: 40px;
+	
+}
+.courses-manu li{
+	display: inline-block;
+	text-transform: capitalize;
+	color: #252525;
+	margin-right: 20px;
+	font-size: 17px;
+	cursor: pointer;
+	transition: 0.5s;
+
+}
+ .courses-manu li i{
+	visibility: hidden;
+	color: #EF2853;
+	transition: 0.5s;
+} 
+.courses-manu .active i{
+	margin-right: 10px;
+	color: #EF2853;
+	visibility: visible;
+}	
+.courses-manu li:hover i{
+	
+	visibility: visible;
+}
+.courses-img img{
+	position: relative;
+	transition: 0.3s;
+
+}
+.certificat{
+	position: absolute;
+	bottom: 30px;
+	right: 25px;
+	padding: 10px 20px;
+	background-color: #FF1949;
+	color: #ffffff;
+	transition: 0.4s;
+}
+.certificat:hover{
+	background-color: #303841;
+}
+.courses-details h3 a{
+	font-size: 20px;
+	color: #252525;
+	padding: 10px 0;
+}
+.courses-details .instructor{
+	font-size: 15px;
+	letter-spacing: 0.2px;
+	color: #252525;
+	font-weight: 400;
+	padding: 30px 0;
+
+}
+.courses-details p{
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 300;
+	color: #444444;
+	padding: 40px 0 25px;
+	position: relative;
+}
+.courses-details p::before{
+	content: "";
+	height: 3px;
+	width: 40px;
+	background: #EE2853;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	transition: 0.5s;
+}
+.courses-img{
+	overflow: hidden;
+}
+.courses-single:hover .courses-img img{
+	transform: scale(1.05);
+}
+.courses-single:hover .courses-details p::before{
+	width: 70px;
+}
+
+.courses-footer .students{
+	font-size: 13px;
+	line-height: 24px;
+	color: #252525;
+	padding-right: 10px;
+}
+.courses-footer .rating{
+	font-size: 13px;
+	line-height: 24px;
+	color: #252525;
+}
+.courses-footer .courses-fee{
+	font-size: 20px;
+	line-height: 24px;
+	color: #FF1949;
+	float: right;
+	padding-right: 5px;
+	font-weight: 500;
+}
+
+/*    05 expart section   css  */
+.expart-box {
+	width: 100%;
+	height: 420px;
+	background: #ddd;
+	padding: 100px;
+	color: #fff;
+
+}
+.expart .col-50{
+	padding: 0;
+}
+.expart-box-01{
+	background: #FF1949;
+}
+.expart-box-02{
+	background: url('img/expart/01.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.expart-box-03{
+	background: url('img/expart/02.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.expart-box-04{
+	background: url('img/expart/03.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.expart-box h3{
+	font-size: 45px;
+	padding-bottom: 20px;
+}
+.expart-box a{
+	font-size: 17px;
+	text-transform: capitalize;
+	color: #fff;
+}
+.expart-box-04 h3,
+.expart-box-04 a{
+	color: #252525;
+}
+
+/*     05 teacher section css   */
+.section-title{
+	padding-bottom: 80px;
+}
+.section-title h2{
+	font-size: 45px;
+	color: #252525;
+	padding-bottom: 40px;
+	position: relative;
+}
+.section-title h2::before{
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 40px;
+	left: 0;
+	bottom: 25px;
+	background: #FF1A49;
+}
+.section-title p{
+	font-size: 19px;
+	color: #333;
+	line-height: 29px;
+}
+.teacher-single{
+	display: flex;
+	margin-bottom: 30px;
+}
+.teacher-single-left{
+	width: 140px;
+	height: 140px;
+}
+.teacher-single-right{
+	color: #252525;
+	padding-left: 30px;
+}
+.teacher-single-right h3 a{
+	font-size: 20px;
+	color: #252525;
+	text-transform: capitalize;
+	padding: 20px 0 7px;
+	transition: 0.3s;
+}
+.teacher-single-right h3 a:hover{
+	color: #FF1949;
+}
+.teacher-single-right span{
+	font-size: 15px;
+	padding-bottom: 7px;
+	display: inline-block;
+}
+.teacher-single-right ul{
+	list-style: none;
+	padding-top: ;
+}
+.teacher-single-right ul li{
+	display: inline-block;
+}
+.teacher-single-right ul li a{
+	color: #252525;
+	margin-right: 4px;
+	transition: 0.3s;
+}
+.teacher-single-right ul li a:hover{
+	color: #FF1949;
+}
+.teacher.section-title{
+	padding-bottom: 90px;
+}
+
+
+/*    review  section css   */
+.review{
+	background-image: url('img/review/01.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #ddd;
+}
+.review-single{
+	display: flex;
+}
+.review-author{
+	height: 140px;
+	width: 140px;
+	border-radius: 50%;
+
+}
+.review-feedback{
+	margin-left: 30px;
+	color: #ffffff;
+
+}
+.review-feedback p{
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 54px;
+}
+.review-feedback span{
+	font-size: 19px;
+	padding-top: 5px;
+	display: inline-block;
+}
+/*   07 tour css    */
+.tour-list{
+	list-style: none;
+}
+.tour-list li{
+	font-size: 15px;
+	line-height: 24px;
+	color: #444444;
+	padding: 5px 0;
+}
+.tour-list li i{
+	padding-right: 10px;
+	color: #FF1A49;
+}
+.tour.section-title{
+	padding-bottom: 30px !important;
+}
+
+/*   form   css   */
+.form{
+	background-image: url('img/form/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #ddd;
+	position: relative;
+	z-index: 1;
+}
+.form::before{
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background: #EE2853;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: 0;
+
+}
+.form-left{
+	background: #FF1949;
+	color: #ffffff;
+	padding: 150px 60px;
+	margin-left: 50px;
+
+}
+.form-left h3{
+	font-size: 45px;
+}
+.form-right{
+	background: #FFFFFF;
+	padding: 130px 60px;
+	margin-right: 50px;
+	position: relative;
+}
+.form-right i{
+	position: absolute;
+	font-weight: 900;
+    left: -30px;
+    color: #fff;
+    top: 45%;
+    font-size: 100px;
+}
+.form-right input{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #D5FFFF;
+	padding: 15px;
+	margin-top: 15px;
+}
+.form-right input[type="submit"]{
+	width: 150px;
+	padding: 20px 0;
+	border-bottom: none;
+	font-size: 16px;
+	background: #252525;
+	color: #ffffff;
+	margin-top: 30px;
+	cursor: pointer;
+}
+.form-right h4{
+	font-size: 28px;
+	color: #252525;
+}
+.form .col-50{
+	padding: 0;
+}
+
+
+/*    07  footer css   */
+.footer-top{
+	background: #252525;
+
+}
+.footer-top h5{
+	font-size: 20px;
+	line-height: 28px;
+	color: #fff;
+}
+.footer-top ul{
+	list-style: none;
+}
+.footer-top ul li a{
+	font-size: 15px;
+	line-height: 24px;
+	color: #fff;
+	padding: 10px 0 0 0;
+	font-weight: 300;
+	transition: 0.3s;
+}
+.footer-top ul li a:hover,
+.Popular-courses-box h6:hover,
+.Popular-courses-box span:hover{
+	color: #FF1949;
+}
+.about-box p{
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+	font-weight: 300;
+	padding: 10px 0;
+}
+.footer-bottom{
+	background: #1D1D1D;
+	padding: 20px 0 30px;
+}
+.Popular-courses-box h6{
+	font-size: 15px;
+	line-height: 22px;
+	margin-top: 15px;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.Popular-courses-box span{
+	font-size: 14px;
+	line-height: 24px;
+	transition: 0.3s;
+	color: #fff;
+	font-weight: 400;
+}
+.footer-bottom {
+	font-size: 14px;
+} 
+.footer-bottom .f-bo-left{
+	color: #E1E1E1;
+}
+.footer-bottom .social-link{
+	float: right;
+	color: #B6B6B6;
+}
+.footer-bottom .social-link span{
+	padding: 0 8px;
+}
+
+
+
+
